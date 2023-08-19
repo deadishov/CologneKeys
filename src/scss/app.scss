@@ -1,0 +1,63 @@
+@import './normalize';
+@import './components/header';
+@import './components/banner';
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 1250px) {
+        max-width: 1000px;
+    }
+
+    @media (max-width: 1050px) {
+        max-width: 800px;
+    }
+
+    @media (max-width: 850px) {
+        max-width: 600px;
+    }
+
+    @media (max-width: 650px) {
+        max-width: 400px;
+    }
+
+    @media (max-width: 450px) {
+        max-width: 305px;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.51);
+    width: 100%;
+    height: 100vh;
+    z-index: 50;
+}
+
+.phone-link {
+    display: inline-flex;
+    font-family: Roboto, sans-serif;
+    gap: 15px;
+    align-items: center;
+    background: #5350FF;
+    border-radius: 15px;
+    color: #FFF;
+    padding: 10px 31px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: filter 0.3s;
+
+    &:hover {
+        filter: brightness(1.3);
+    }
+
+    @media (max-width: 450px) {
+        padding: 10px 10px;
+    }
+}
