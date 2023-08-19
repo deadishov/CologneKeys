@@ -26,16 +26,16 @@ export const Header = () => {
 
     return (
         <header className="header">
-            <div className={menuOpen ? "burger__menu open" : "burger__menu"}>
+            <div className={menuOpen ? "header__burger-menu open" : "header__burger-menu"}>
                 <div onClick={handleMenu} className="close-button">
                     <span className="stick"></span>
                     <span className="stick"></span>
                 </div>
-                <ul className="burger__menu-list">
+                <ul className="header__burger-menu-list">
                     {
                         menuItems.map((item) => (
-                            <li className="burger__menu-item">
-                                <a href="#" className="burger__menu-link">{item}</a>
+                            <li className="header__burger-menu-item">
+                                <a href="#" className="header__burger-menu-link">{item}</a>
                             </li>
                         ))
                     }
@@ -54,13 +54,13 @@ export const Header = () => {
                     <ul className="header__menu-list">
                         {
                             menuItems.map((item) => (
-                                <li className="header__menu-item menu-item">
-                                    <a href="#" className="header__menu-link menu-link">{item}</a>
+                                <li className="header__menu-item menu__item">
+                                    <a href="#" className="header__menu-link menu__link">{item}</a>
                                 </li>
                             ))
                         }
                     </ul>
-                    <a className="header__menu-phone phone-link">
+                    <a className="header__menu-phone phone__link">
                         <img className="phone-img" src={phoneImg} alt="phone" />
                         <p className="header__menu-phone-content">01579 2395837</p>
                     </a>

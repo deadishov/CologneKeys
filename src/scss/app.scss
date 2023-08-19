@@ -1,6 +1,7 @@
 @import './normalize';
 @import './components/header';
 @import './components/banner';
+@import './components/aboutUs';
 
 .container {
     max-width: 1200px;
@@ -37,7 +38,7 @@
     z-index: 50;
 }
 
-.phone-link {
+.phone__link {
     display: inline-flex;
     font-family: Roboto, sans-serif;
     gap: 15px;
@@ -60,4 +61,11 @@
     @media (max-width: 450px) {
         padding: 10px 10px;
     }
+}
+
+.section__title {
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }

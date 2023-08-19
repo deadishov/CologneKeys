@@ -3,7 +3,7 @@
     box-shadow: 0px 5px 22px 0px rgba(0, 0, 0, 0.15);
     overflow: hidden;
 
-    .burger__menu {
+    &__burger-menu {
         display: none;
         color: #FFF;
         padding-top: 70px;
@@ -11,7 +11,7 @@
         align-items: center;
         position: fixed;
         background-color: #5350FF;
-        width: 30%;
+        width: 270px;
         left: -100%;
         opacity: 0;
         transition: left 1s, opacity .5s;
@@ -48,7 +48,7 @@
                 height: 100%;
                 background-color: #fff;
                 opacity: 0;
-                transform: scaleX(0.4);
+                transform: scaleX(0.7);
                 transition: transform .2s, opacity .2s;
                 z-index: -1;
             }
@@ -56,7 +56,7 @@
             &:hover::before {
                 transform: scaleX(1);
                 opacity: 1;
-                transition: transform .4s, opacity .4s;
+                transition: transform .3s, opacity .3s;
             }
 
             &:hover {
@@ -112,9 +112,19 @@
                 }
             }
         }
+
+        @media (max-width: 400px) {
+            width: 100%;
+            justify-content: center;
+
+            &-link {
+                justify-content: center;
+                padding-left: 0;
+            }
+        }
     }
 
-    .menu-link {
+    .menu__link {
         height: 41%;
         position: relative;
         display: flex;
@@ -138,7 +148,7 @@
         }
     }
 
-    .menu-item {
+    .menu__item {
         height: 100%;
         display: flex;
         align-items: center;
@@ -150,7 +160,7 @@
     }
 
     @media (max-width: 850px) {
-        .burger__menu {
+        .header__burger-menu {
             display: block;
         }
     }
@@ -210,7 +220,7 @@
         }
     }
 
-    &-phone.phone-link {
+    &-phone.phone__link {
         @media (max-width: 1250px) {
             padding: 10px 10px;
             gap: 10px;

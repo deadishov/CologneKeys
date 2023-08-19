@@ -9,29 +9,29 @@ export const Banner = () => {
             <div className="container">
                 <div className="banner__content">
                     <div className="banner__text-block">
-                        <h1 className="banner-title">Schlüsseldienst Köln</h1>
-                        <div className="banner-textline">
+                        <h1 className="banner__title">Schlüsseldienst Köln</h1>
+                        <div className="banner__textline">
                             <img src={checkMark} alt="check-mark" />
-                            <p className="banner-text">in 15-30 Minuten vor Ort</p>
+                            <p className="banner__text">in 15-30 Minuten vor Ort</p>
                         </div>
-                        <div className="banner-textline">
+                        <div className="banner__textline">
                             <img src={checkMark} alt="check-mark" />
-                            <p className="banner-text">24h Schlüsselnotdienst</p>
+                            <p className="banner__text">24h Schlüsselnotdienst</p>
                         </div>
-                        <div className="banner-textline">
+                        <div className="banner__textline">
                             <img src={checkMark} alt="check-mark" />
-                            <p className="banner-text">Türöffnung ohne Schäden</p>
+                            <p className="banner__text">Türöffnung ohne Schäden</p>
                         </div>
-                        <p className="banner-priceline">Der Schlüsseldienst Köln öffnet jede Tür ohne Schlüssel ab <span className='price'>39,-€</span></p>
-                        <div className="banner-phone">
-                            <a className="phone-link">
-                                <img className="phone-img" src={phoneImg} alt="phone" />
-                                <p className="banner-phone-content">01579 2395837</p>
+                        <p className="banner__priceline">Der Schlüsseldienst Köln öffnet jede Tür ohne Schlüssel ab <span className='price'>39,-€</span></p>
+                        <div className="banner__phone">
+                            <a className="phone__link">
+                                <img className="phone__img" src={phoneImg} alt="phone" />
+                                <p className="banner__phone-content">01579 2395837</p>
                             </a>
                         </div>
                     </div>
                     <div className="banner__image-block">
-                        <img className="banner-image" src={bannerManImg} alt="dude" />
+                        <img className="banner__image" src={bannerManImg} alt="dude" />
                     </div>
                 </div>
             </div>
