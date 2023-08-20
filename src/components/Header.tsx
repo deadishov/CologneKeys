@@ -1,9 +1,16 @@
 import React from 'react'
 import mainLogo from '../assets/images/logo.svg'
-import menuItems from '../data/menuItems.json'
 import phoneImg from '../assets/images/phone.svg'
 
-export const Header = () => {
+interface MenuItem {
+    text: string
+}
+
+interface HeaderProps {
+    list: MenuItem[]
+}
+
+export const Header: React.FC<HeaderProps> = ({ list }) => {
     const [menuOpen, setMenuOpen] = React.useState(false)
     const overlayRef = React.useRef<HTMLDivElement>(null)
 
@@ -26,16 +33,16 @@ export const Header = () => {
 
     return (
         <header className="header">
-            <div className={menuOpen ? "header__burger-menu open" : "header__burger-menu"}>
+            <div className={menuOpen ? "header__burger-menu_open" : "header__burger-menu"}>
                 <div onClick={handleMenu} className="close-button">
-                    <span className="stick"></span>
-                    <span className="stick"></span>
+                    <span className="close-button__stick"></span>
+                    <span className="close-button__stick"></span>
                 </div>
                 <ul className="header__burger-menu-list">
                     {
-                        menuItems.map((item) => (
+                        list.map((item) => (
                             <li className="header__burger-menu-item">
-                                <a href="#" className="header__burger-menu-link">{item}</a>
+                                <a href="#" className="header__burger-menu-link">{item.text}</a>
                             </li>
                         ))
                     }
@@ -48,22 +55,24 @@ export const Header = () => {
                         <span className="string"></span>
                         <span className="string"></span>
                     </div>
-                    <a className='header__menu-logo' href="#">
-                        <img src={mainLogo} alt="logo" />
+                    <a className='header__menu-logo-link' href="#">
+                        <img className='header__menu-logo' src={mainLogo} alt="logo" />
                     </a>
                     <ul className="header__menu-list">
                         {
-                            menuItems.map((item) => (
-                                <li className="header__menu-item menu__item">
-                                    <a href="#" className="header__menu-link menu__link">{item}</a>
+                            list.map((item) => (
+                                <li className="header__menu-item">
+                                    <a href="#" className="header__menu-link">{item.text}</a>
                                 </li>
                             ))
                         }
                     </ul>
-                    <a className="header__menu-phone phone__link">
-                        <img className="phone-img" src={phoneImg} alt="phone" />
-                        <p className="header__menu-phone-content">01579 2395837</p>
-                    </a>
+                    <div className="phone">
+                        <button className="header__menu-phone phone__button">
+                            <img className="phone-img" src={phoneImg} alt="phone" />
+                            <p className="header__menu-phone-content">01579 2395837</p>
+                        </button>
+                    </div>
                 </div>
             </div>
             {

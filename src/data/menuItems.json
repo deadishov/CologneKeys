@@ -1,7 +1,17 @@
 [
-    "Startseite",
-    "Einsatzgebiet",
-    "Leistungen",
-    "Über uns",
-    "Kontakt"
+    {
+        "text": "Startseite"
+    },
+    {
+        "text": "Einsatzgebiet"
+    },
+    {
+        "text": "Leistungen"
+    },
+    {
+        "text": "Über uns"
+    },
+    {
+        "text": "Kontakt"
+    }
 ]

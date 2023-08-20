@@ -2,6 +2,9 @@
 @import './components/header';
 @import './components/banner';
 @import './components/aboutUs';
+@import './components/counter';
+@import './components/price';
+@import './components/reviews';
 
 .container {
     max-width: 1200px;
@@ -24,7 +27,7 @@
     }
 
     @media (max-width: 450px) {
-        max-width: 305px;
+        max-width: 290px;
     }
 }
 
@@ -38,32 +41,43 @@
     z-index: 50;
 }
 
-.phone__link {
-    display: inline-flex;
-    font-family: Roboto, sans-serif;
-    gap: 15px;
-    align-items: center;
-    background: #5350FF;
-    border-radius: 15px;
-    color: #FFF;
-    padding: 10px 31px;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    cursor: pointer;
-    transition: filter 0.3s;
+.phone {
+    display: flex;
+    border: none;
 
-    &:hover {
-        filter: brightness(1.3);
+    &__button {
+        border: none;
+        display: inline-flex;
+        font-family: Roboto, sans-serif;
+        gap: 15px;
+        align-items: center;
+        border-radius: 15px;
+        color: #FFF;
+        padding: 10px 30px;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        cursor: pointer;
+        transition: filter 0.3s;
+
+        &:hover {
+            filter: brightness(1.3);
+        }
+
+        @media (max-width: 450px) {
+            padding: 10px 10px;
+        }
     }
 
-    @media (max-width: 450px) {
-        padding: 10px 10px;
+    &__content {
+        @media (max-width: 1050px) {
+            font-size: 18px;
+        }
     }
 }
 
-.section__title {
+.title {
     font-size: 36px;
     font-style: normal;
     font-weight: 500;

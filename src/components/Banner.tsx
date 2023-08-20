@@ -23,11 +23,11 @@ export const Banner = () => {
                             <p className="banner__text">Türöffnung ohne Schäden</p>
                         </div>
                         <p className="banner__priceline">Der Schlüsseldienst Köln öffnet jede Tür ohne Schlüssel ab <span className='price'>39,-€</span></p>
-                        <div className="banner__phone">
-                            <a className="phone__link">
+                        <div className="phone">
+                            <button className="banner__phone phone__button">
                                 <img className="phone__img" src={phoneImg} alt="phone" />
-                                <p className="banner__phone-content">01579 2395837</p>
-                            </a>
+                                <p className="phone__content">01579 2395837</p>
+                            </button>
                         </div>
                     </div>
                     <div className="banner__image-block">
