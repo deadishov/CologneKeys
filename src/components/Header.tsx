@@ -41,7 +41,7 @@ export const Header: React.FC<HeaderProps> = ({ list }) => {
                 <ul className="header__burger-menu-list">
                     {
                         list.map((item) => (
-                            <li className="header__burger-menu-item">
+                            <li key={item.text} className="header__burger-menu-item">
                                 <a href="#" className="header__burger-menu-link">{item.text}</a>
                             </li>
                         ))
@@ -60,8 +60,8 @@ export const Header: React.FC<HeaderProps> = ({ list }) => {
                     </a>
                     <ul className="header__menu-list">
                         {
-                            list.map((item) => (
-                                <li className="header__menu-item">
+                            list.map((item, i) => (
+                                <li key={i} className="header__menu-item">
                                     <a href="#" className="header__menu-link">{item.text}</a>
                                 </li>
                             ))

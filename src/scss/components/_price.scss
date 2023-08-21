@@ -1,6 +1,6 @@
 .price {
     font-family: Roboto, sans-serif;
-    padding: 25px 0 70px 0;
+    padding: 40px 0 70px 0;
 
     &__content {
         display: flex;
@@ -104,6 +104,10 @@
         font-size: 18px;
         font-style: normal;
         font-weight: 400;
+
+        &_blue {
+            color: #5350ff;
+        }
     }
 
     @media (max-width: 1250px) {

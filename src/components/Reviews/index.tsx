@@ -69,7 +69,7 @@ export const Reviews: React.FC<ReviewsProps> = ({ list }) => {
                     >
                         {
                             list.map((slide) => (
-                                <SwiperSlide className={styles.reviews__slide}>
+                                <SwiperSlide key={slide.name} className={styles.reviews__slide}>
                                     <div className="reviews__card">
                                         <div className="reviews__top">
                                             <div className="reviews__person-info">

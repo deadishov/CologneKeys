@@ -5,6 +5,9 @@
 @import './components/counter';
 @import './components/price';
 @import './components/reviews';
+@import './components/advantages';
+@import './components/help';
+@import './components/footer';
 
 .container {
     max-width: 1200px;
@@ -82,4 +85,8 @@
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+
+    @media (max-width: 450px) {
+        font-size: 23px;
+    }
 }
