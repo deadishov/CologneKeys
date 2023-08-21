@@ -13,9 +13,11 @@ interface HeaderProps {
 export const Header: React.FC<HeaderProps> = ({ list }) => {
     const [menuOpen, setMenuOpen] = React.useState(false)
     const overlayRef = React.useRef<HTMLDivElement>(null)
+    const body = document.querySelector('body')
 
     const handleMenu = () => {
         setMenuOpen(!menuOpen)
+        !menuOpen ? body?.classList.add('active') : body?.classList.remove('active')
     }
 
 
@@ -23,6 +25,7 @@ export const Header: React.FC<HeaderProps> = ({ list }) => {
         const menuOutsideClick = (event: MouseEvent) => {
             if (overlayRef.current && event.composedPath().includes(overlayRef.current)) {
                 setMenuOpen(false)
+                body?.classList.remove('active')
             }
         }
 
