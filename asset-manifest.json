@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/CologneKeys/static/css/main.dfbd343a.css",
-    "main.js": "/CologneKeys/static/js/main.83172430.js",
+    "main.css": "/CologneKeys/static/css/main.5d138501.css",
+    "main.js": "/CologneKeys/static/js/main.541c7512.js",
     "static/media/banner-dude.png": "/CologneKeys/static/media/banner-dude.23dbe43f962441da5e30.png",
     "static/media/specialist.png": "/CologneKeys/static/media/specialist.8836f110718d64f1d8f9.png",
     "static/media/advantages-man.png": "/CologneKeys/static/media/advantages-man.2056f1601287123d5d92.png",
@@ -23,11 +23,11 @@
     "static/media/accordion-arrow.svg": "/CologneKeys/static/media/accordion-arrow.4ccbaf9c3ef4d8c314c9a363027a045d.svg",
     "static/media/arrowLeft.svg": "/CologneKeys/static/media/arrowLeft.f2546d2512d28ce8c7d7f956a8552ae9.svg",
     "static/media/arrowRight.svg": "/CologneKeys/static/media/arrowRight.beeef90efda8d4262a391b204984108b.svg",
-    "main.dfbd343a.css.map": "/CologneKeys/static/css/main.dfbd343a.css.map",
-    "main.83172430.js.map": "/CologneKeys/static/js/main.83172430.js.map"
+    "main.5d138501.css.map": "/CologneKeys/static/css/main.5d138501.css.map",
+    "main.541c7512.js.map": "/CologneKeys/static/js/main.541c7512.js.map"
   },
   "entrypoints": [
-    "static/css/main.dfbd343a.css",
-    "static/js/main.83172430.js"
+    "static/css/main.5d138501.css",
+    "static/js/main.541c7512.js"
   ]
 }
